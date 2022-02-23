@@ -64,7 +64,7 @@ public class UserController {
 		// DTO ===> UserResponse()
 	UserResponse userResponse=  new UserResponse();
 	userResponse.setEmail(user.getEmail());
-	userResponse.setName(user.getName());
+	userResponse.setName(user.getUsername());
 	Set<String> roles= new HashSet<>();
 	userResponse.setDoj(user.getDoj());
 	user.getRoles().forEach(e2->{
@@ -95,7 +95,7 @@ public class UserController {
 		list.forEach(e->{
 			UserResponse userResponse = new UserResponse();
 			userResponse.setEmail(e.getEmail());
-			userResponse.setName(e.getName());
+			userResponse.setName(e.getUsername());
 			userResponse.setDoj(e.getDoj());
 			
 			Set<String> roles = new HashSet<>();
@@ -169,7 +169,7 @@ public class UserController {
 		});
 		user.setAddresses(addresses);
 		user.setEmail(signupRequest.getEmail());
-		user.setName(signupRequest.getName());
+		user.setUsername(signupRequest.getName());
 		user.setPassword(signupRequest.getPassword());
 		user.setRoles(roles);
 		user.setDoj(signupRequest.getDoj());

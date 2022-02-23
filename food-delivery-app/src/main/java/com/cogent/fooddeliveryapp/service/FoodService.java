@@ -22,7 +22,7 @@ public interface FoodService {
 	public List<Food> findAll();
 	public List<Food> getAllFoods();
 	public String deleteFoodById(long id);
-	public Food updateFood(Food food);
+	public Food updateFood(long foodId);
 	public boolean existsById(long id);
 	public List<Food> getAllFoodsAscOrder();
 	public List<Food> getAllFoodsDescOrder();

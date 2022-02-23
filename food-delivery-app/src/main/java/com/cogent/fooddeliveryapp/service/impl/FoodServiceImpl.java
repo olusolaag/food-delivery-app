@@ -49,7 +49,7 @@ public class FoodServiceImpl implements FoodService {
 	}
 
 	@Override
-	public Food updateFood(Food food) {
+	public Food updateFood(long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

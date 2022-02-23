@@ -55,7 +55,7 @@ public class User {
 	
 	private String password;
 	
-	private String name;
+	private String username;
 //	@Temporal(TemporalType.DATE) // must be specified for persistent fields or properties of type java.util.Date and java.util.Calendar
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private LocalDate doj = LocalDate.now();
